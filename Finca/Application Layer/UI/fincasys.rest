@@ -1,0 +1,15 @@
+POST https://developer.fincasys.com/residentApi/fin_book_controller.php HTTP/1.1
+key: bmsapikey,
+Content-Type: application/json;
+
+{
+    addTransaction: addTransaction,
+    society_id: 75,
+    user_id: 1565,
+    unit_id: 4368,
+    finbook_customer_id: 5,
+    amount: 100,
+    amount_type: 0
+}
+
+

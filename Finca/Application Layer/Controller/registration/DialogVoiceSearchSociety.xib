@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogVoiceSearchSociety" customModule="Finca" customModuleProvider="target">
+            <connections>
+                <outlet property="VwAnimate" destination="cYb-J2-put" id="bGa-g1-9Xm"/>
+                <outlet property="VwMain" destination="oQ7-hD-fHu" id="ji2-yD-DVq"/>
+                <outlet property="btnVoicesearch" destination="ZPD-Hc-YWq" id="Fa0-GY-pXA"/>
+                <outlet property="lblsearchtext" destination="bLQ-Jd-MRH" id="7NM-cu-wQC"/>
+                <outlet property="microphoneButton" destination="ZPD-Hc-YWq" id="cue-WA-gkt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-lf-Dfp">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQ7-hD-fHu">
+                            <rect key="frame" x="8" y="269" width="398" height="280"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English (United States)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xR0-Je-kXt">
+                                    <rect key="frame" x="118" y="235.5" width="162" height="19"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speak now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv7-IV-JOt">
+                                    <rect key="frame" x="134" y="20" width="130" height="30.5"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="26"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn't catch that. Try speaking again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-Jd-MRH">
+                                    <rect key="frame" x="25" y="151" width="348" height="20"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYb-J2-put">
+                                    <rect key="frame" x="154" y="67" width="57" height="58"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="58" id="KvO-oU-rK3"/>
+                                        <constraint firstAttribute="width" constant="57" id="vcy-mZ-HYU"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPD-Hc-YWq">
+                                    <rect key="frame" x="169" y="66" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="d34-z6-OwF"/>
+                                        <constraint firstAttribute="height" constant="60" id="d7W-P2-cgV"/>
+                                    </constraints>
+                                    <color key="tintColor" name="ColorPrimary"/>
+                                    <state key="normal" image="mic_on"/>
+                                    <connections>
+                                        <action selector="VoiceSearchBtnClick:" destination="-1" eventType="touchUpInside" id="nDh-Vg-32x"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUm-FS-CBn">
+                                    <rect key="frame" x="154" y="187.5" width="90" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="Ubv-dO-5p9"/>
+                                        <constraint firstAttribute="height" constant="35" id="ikC-HP-mwC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                    <state key="normal" title="Try again"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="TryAgainBtnClick:" destination="-1" eventType="touchUpInside" id="4md-sT-eQ3"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-mj-a82">
+                                    <rect key="frame" x="363" y="5" width="30" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2np-Qx-pRr">
+                                            <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="O5I-Ll-2yM"/>
+                                                <constraint firstAttribute="width" constant="20" id="vYO-b5-lo3"/>
+                                            </constraints>
+                                            <state key="normal" image="close-button"/>
+                                            <connections>
+                                                <action selector="VoiceSearchCancelBtnClick:" destination="-1" eventType="touchUpInside" id="ibh-f9-c1w"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="2np-Qx-pRr" firstAttribute="centerY" secondItem="dfy-mj-a82" secondAttribute="centerY" id="X7l-h9-ifO"/>
+                                        <constraint firstAttribute="width" constant="30" id="gEa-ii-eBZ"/>
+                                        <constraint firstAttribute="height" constant="30" id="s55-Uv-gZe"/>
+                                        <constraint firstItem="2np-Qx-pRr" firstAttribute="centerX" secondItem="dfy-mj-a82" secondAttribute="centerX" id="uJ9-SY-ZVh"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Hv7-IV-JOt" firstAttribute="top" secondItem="oQ7-hD-fHu" secondAttribute="top" constant="20" id="0gX-Uk-51W"/>
+                                <constraint firstItem="cYb-J2-put" firstAttribute="centerY" secondItem="ZPD-Hc-YWq" secondAttribute="centerY" id="DHI-cb-gTT"/>
+                                <constraint firstItem="bLQ-Jd-MRH" firstAttribute="top" secondItem="ZPD-Hc-YWq" secondAttribute="bottom" constant="25" id="UaF-QG-ljc"/>
+                                <constraint firstItem="ZPD-Hc-YWq" firstAttribute="top" secondItem="Hv7-IV-JOt" secondAttribute="bottom" constant="15.5" id="XDk-uW-fUk"/>
+                                <constraint firstItem="bLQ-Jd-MRH" firstAttribute="leading" secondItem="oQ7-hD-fHu" secondAttribute="leading" constant="25" id="e5L-jI-VAB"/>
+                                <constraint firstItem="Hv7-IV-JOt" firstAttribute="centerX" secondItem="oQ7-hD-fHu" secondAttribute="centerX" id="e5r-Qh-rpF"/>
+                                <constraint firstItem="xR0-Je-kXt" firstAttribute="top" secondItem="zUm-FS-CBn" secondAttribute="bottom" constant="13" id="f0u-LR-D8V"/>
+                                <constraint firstItem="ZPD-Hc-YWq" firstAttribute="centerX" secondItem="Hv7-IV-JOt" secondAttribute="centerX" id="h95-Qb-hd6"/>
+                                <constraint firstItem="zUm-FS-CBn" firstAttribute="centerX" secondItem="bLQ-Jd-MRH" secondAttribute="centerX" id="iCk-x9-0a1"/>
+                                <constraint firstAttribute="trailing" secondItem="bLQ-Jd-MRH" secondAttribute="trailing" constant="25" id="ki2-41-pJc"/>
+                                <constraint firstAttribute="height" constant="280" id="qjz-aY-teq"/>
+                                <constraint firstItem="cYb-J2-put" firstAttribute="centerX" secondItem="ZPD-Hc-YWq" secondAttribute="centerX" constant="-16.5" id="rbY-MV-rwc"/>
+                                <constraint firstItem="xR0-Je-kXt" firstAttribute="centerX" secondItem="zUm-FS-CBn" secondAttribute="centerX" id="tXV-sg-far"/>
+                                <constraint firstItem="zUm-FS-CBn" firstAttribute="top" secondItem="bLQ-Jd-MRH" secondAttribute="bottom" constant="16.5" id="uxo-iT-JF3"/>
+                                <constraint firstAttribute="trailing" secondItem="dfy-mj-a82" secondAttribute="trailing" constant="5" id="vHo-MO-KPU"/>
+                                <constraint firstItem="dfy-mj-a82" firstAttribute="top" secondItem="oQ7-hD-fHu" secondAttribute="top" constant="5" id="yi7-PK-QfZ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oQ7-hD-fHu" firstAttribute="centerX" secondItem="GSc-lf-Dfp" secondAttribute="centerX" id="Lsv-hU-M9W"/>
+                        <constraint firstItem="oQ7-hD-fHu" firstAttribute="centerY" secondItem="GSc-lf-Dfp" secondAttribute="centerY" id="WPQ-vc-Gey"/>
+                        <constraint firstAttribute="trailing" secondItem="oQ7-hD-fHu" secondAttribute="trailing" constant="8" id="XnY-38-1ei"/>
+                        <constraint firstItem="oQ7-hD-fHu" firstAttribute="leading" secondItem="GSc-lf-Dfp" secondAttribute="leading" constant="8" id="c24-JF-lvS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GSc-lf-Dfp" secondAttribute="bottom" id="B6t-sg-g6T"/>
+                <constraint firstItem="GSc-lf-Dfp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hfD-Li-C62"/>
+                <constraint firstItem="GSc-lf-Dfp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="p79-aW-ndw"/>
+                <constraint firstItem="GSc-lf-Dfp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tYK-sa-bDP"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-button" width="32" height="32"/>
+        <image name="mic_on" width="72" height="72"/>
+        <namedColor name="ColorPrimary">
+            <color red="0.40784313725490196" green="0.17647058823529413" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

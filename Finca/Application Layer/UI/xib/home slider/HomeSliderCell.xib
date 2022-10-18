@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins_regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeSliderCell" customModule="Finca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpk-4X-HXZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ct-nR-shd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ol-vR-oGp" customClass="MarqueeLabel" customModule="Finca" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35211464585057944" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ep3-NT-6v9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-Gk-zvu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2ct-nR-shd" firstAttribute="leading" secondItem="fpk-4X-HXZ" secondAttribute="leading" id="223-x4-IJW"/>
+                        <constraint firstItem="WB3-Gk-zvu" firstAttribute="centerY" secondItem="2ct-nR-shd" secondAttribute="centerY" id="2dg-dh-W4e"/>
+                        <constraint firstItem="WB3-Gk-zvu" firstAttribute="height" secondItem="2ct-nR-shd" secondAttribute="height" id="5Bf-mr-CVL"/>
+                        <constraint firstAttribute="trailing" secondItem="2ct-nR-shd" secondAttribute="trailing" id="DrR-We-3fm"/>
+                        <constraint firstItem="5ol-vR-oGp" firstAttribute="leading" secondItem="fpk-4X-HXZ" secondAttribute="leading" id="R8r-RX-Dqh"/>
+                        <constraint firstItem="WB3-Gk-zvu" firstAttribute="centerX" secondItem="2ct-nR-shd" secondAttribute="centerX" id="ZEb-6a-Q16"/>
+                        <constraint firstAttribute="trailing" secondItem="5ol-vR-oGp" secondAttribute="trailing" id="elz-Ek-doM"/>
+                        <constraint firstItem="2ct-nR-shd" firstAttribute="top" secondItem="fpk-4X-HXZ" secondAttribute="top" id="fMG-BR-iFa"/>
+                        <constraint firstAttribute="bottom" secondItem="2ct-nR-shd" secondAttribute="bottom" id="gsm-B2-MLY"/>
+                        <constraint firstItem="WB3-Gk-zvu" firstAttribute="width" secondItem="2ct-nR-shd" secondAttribute="width" id="kfQ-zE-Mru"/>
+                        <constraint firstAttribute="bottom" secondItem="5ol-vR-oGp" secondAttribute="bottom" id="rRk-1T-ecQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fpk-4X-HXZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8eo-u1-jjO"/>
+                <constraint firstItem="fpk-4X-HXZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FKJ-Gs-8RI"/>
+                <constraint firstItem="fpk-4X-HXZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="gZz-ci-iRN"/>
+                <constraint firstItem="fpk-4X-HXZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="nvj-hq-Iqz"/>
+            </constraints>
+            <connections>
+                <outlet property="btnClickPager" destination="WB3-Gk-zvu" id="zqU-an-E8y"/>
+                <outlet property="ivImage" destination="2ct-nR-shd" id="jNa-Se-67A"/>
+                <outlet property="lbDescription" destination="5ol-vR-oGp" id="IG1-U4-J1e"/>
+                <outlet property="viewMain" destination="fpk-4X-HXZ" id="F5F-hR-PU9"/>
+            </connections>
+            <point key="canvasLocation" x="37.600000000000001" y="34.632683658170919"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5ol-vR-oGp">
+            <size key="intrinsicContentSize" width="34.5" height="16.5"/>
+        </designable>
+    </designables>
+</document>

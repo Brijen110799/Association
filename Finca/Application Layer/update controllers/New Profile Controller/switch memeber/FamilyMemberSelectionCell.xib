@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FamilyMemberSelectionCell" customModule="Finca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifA-1U-4Bv">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="131"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2q-3e-mI9">
+                                <rect key="frame" x="4" y="4" width="125" height="123"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_default" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-jy-lCK">
+                                        <rect key="frame" x="37.5" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bI9-Fs-bez"/>
+                                            <constraint firstAttribute="width" constant="50" id="y9u-E6-YWo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fvfdvdfvdfvdfhvdfjkvhdfvdfjvdfjkvdhvjkdfhvdfjkhvdfjkhvvkvhkhkhkvhkvhkvhdvhdfvhdfvhdfvdf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDu-Wr-qcB">
+                                        <rect key="frame" x="3" y="68" width="119" height="51"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2NM-jy-lCK" firstAttribute="centerX" secondItem="W2q-3e-mI9" secondAttribute="centerX" id="6Eq-g8-Uzc"/>
+                                    <constraint firstAttribute="trailing" secondItem="UDu-Wr-qcB" secondAttribute="trailing" constant="3" id="6X9-j5-lYt"/>
+                                    <constraint firstItem="UDu-Wr-qcB" firstAttribute="top" secondItem="2NM-jy-lCK" secondAttribute="bottom" constant="10" id="NWO-7f-1NV"/>
+                                    <constraint firstAttribute="bottom" secondItem="UDu-Wr-qcB" secondAttribute="bottom" constant="4" id="df3-rw-VmN"/>
+                                    <constraint firstItem="UDu-Wr-qcB" firstAttribute="leading" secondItem="W2q-3e-mI9" secondAttribute="leading" constant="3" id="sbe-n0-eC1"/>
+                                    <constraint firstItem="2NM-jy-lCK" firstAttribute="top" secondItem="W2q-3e-mI9" secondAttribute="top" constant="8" id="tF2-Ev-KHC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W2q-3e-mI9" secondAttribute="trailing" constant="4" id="HAf-M6-4Es"/>
+                            <constraint firstItem="W2q-3e-mI9" firstAttribute="leading" secondItem="ifA-1U-4Bv" secondAttribute="leading" constant="4" id="RAs-1S-BKH"/>
+                            <constraint firstAttribute="bottom" secondItem="W2q-3e-mI9" secondAttribute="bottom" constant="4" id="rNv-KI-WIp"/>
+                            <constraint firstItem="W2q-3e-mI9" firstAttribute="top" secondItem="ifA-1U-4Bv" secondAttribute="top" constant="4" id="wCY-XV-7AC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ifA-1U-4Bv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KJi-1X-iha"/>
+                <constraint firstAttribute="trailing" secondItem="ifA-1U-4Bv" secondAttribute="trailing" id="XGY-qq-cYE"/>
+                <constraint firstItem="ifA-1U-4Bv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bnY-Ev-NlO"/>
+                <constraint firstAttribute="bottom" secondItem="ifA-1U-4Bv" secondAttribute="bottom" id="mk3-fS-YaX"/>
+            </constraints>
+            <size key="customSize" width="133" height="131"/>
+            <connections>
+                <outlet property="ivProfile" destination="2NM-jy-lCK" id="J61-Jh-w4t"/>
+                <outlet property="lbName" destination="UDu-Wr-qcB" id="ZWd-fH-2XA"/>
+                <outlet property="viewMain" destination="W2q-3e-mI9" id="qTl-3L-Vzp"/>
+            </connections>
+            <point key="canvasLocation" x="89.130434782608702" y="90.736607142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="user_default" width="100" height="100"/>
+    </resources>
+</document>

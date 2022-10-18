@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DocumentNameCell" customModule="Finca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="An4-bO-xsl">
+                        <rect key="frame" x="0.0" y="0.0" width="99" height="66"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATG-6r-8r5">
+                                <rect key="frame" x="4" y="4" width="91" height="58"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close-button" translatesAutoresizingMaskIntoConstraints="NO" id="y6E-dK-S91">
+                                        <rect key="frame" x="69" y="22" width="14" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="K0E-kg-iRR"/>
+                                            <constraint firstAttribute="width" constant="14" id="Uad-za-Aln"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yad-pa-WGR">
+                                        <rect key="frame" x="59" y="0.0" width="32" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="G12-Fg-z1d"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="onClickDelete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="azY-oX-huw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeldsdsdsd" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-3W-P43">
+                                        <rect key="frame" x="1" y="21" width="57" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="gray_20"/>
+                                <constraints>
+                                    <constraint firstItem="cbn-3W-P43" firstAttribute="leading" secondItem="ATG-6r-8r5" secondAttribute="leading" constant="1" id="5D8-ZZ-Wct"/>
+                                    <constraint firstItem="y6E-dK-S91" firstAttribute="centerY" secondItem="ATG-6r-8r5" secondAttribute="centerY" id="8rk-OC-RIv"/>
+                                    <constraint firstItem="yad-pa-WGR" firstAttribute="leading" secondItem="cbn-3W-P43" secondAttribute="trailing" constant="1" id="HBE-yD-Cdl"/>
+                                    <constraint firstAttribute="trailing" secondItem="yad-pa-WGR" secondAttribute="trailing" id="XJY-wg-kZQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="y6E-dK-S91" secondAttribute="trailing" constant="8" id="nCN-Xt-QTJ"/>
+                                    <constraint firstItem="cbn-3W-P43" firstAttribute="centerY" secondItem="ATG-6r-8r5" secondAttribute="centerY" id="qhd-IR-Bod"/>
+                                    <constraint firstAttribute="bottom" secondItem="yad-pa-WGR" secondAttribute="bottom" id="rIy-th-Bfj"/>
+                                    <constraint firstItem="yad-pa-WGR" firstAttribute="top" secondItem="ATG-6r-8r5" secondAttribute="top" id="xdJ-7X-Qw0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ATG-6r-8r5" firstAttribute="leading" secondItem="An4-bO-xsl" secondAttribute="leading" constant="4" id="0ki-og-J1g"/>
+                            <constraint firstAttribute="bottom" secondItem="ATG-6r-8r5" secondAttribute="bottom" constant="4" id="d0I-mN-dOp"/>
+                            <constraint firstItem="ATG-6r-8r5" firstAttribute="top" secondItem="An4-bO-xsl" secondAttribute="top" constant="4" id="kHz-Zu-AH3"/>
+                            <constraint firstAttribute="trailing" secondItem="ATG-6r-8r5" secondAttribute="trailing" constant="4" id="qoq-we-7bM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="An4-bO-xsl" secondAttribute="bottom" id="6BN-gs-GJ1"/>
+                <constraint firstItem="An4-bO-xsl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TLc-5x-TpH"/>
+                <constraint firstAttribute="trailing" secondItem="An4-bO-xsl" secondAttribute="trailing" id="jVY-GZ-RrH"/>
+                <constraint firstItem="An4-bO-xsl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oX8-eK-FAT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="99" height="66"/>
+            <connections>
+                <outlet property="bClose" destination="yad-pa-WGR" id="KfR-Wa-MqT"/>
+                <outlet property="lbTitle" destination="cbn-3W-P43" id="qT8-S3-8Xx"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="143.30357142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close-button" width="32" height="32"/>
+        <namedColor name="gray_20">
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

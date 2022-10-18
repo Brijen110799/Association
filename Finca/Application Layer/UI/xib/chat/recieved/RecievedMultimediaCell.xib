@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins_regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="301" id="KGk-i7-Jjw" customClass="RecievedMultimediaCell" customModule="Finca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="301"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="301"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keG-8v-P7n">
+                        <rect key="frame" x="4" y="4" width="244" height="281"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwr-dS-fBv">
+                                <rect key="frame" x="8" y="236" width="228" height="40"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="grey_90"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pv3-og-DGn">
+                                <rect key="frame" x="12" y="12" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="FLf-TK-s1q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93X-xN-8CR">
+                                <rect key="frame" x="12" y="12" width="220" height="220"/>
+                                <connections>
+                                    <action selector="onClickFullImage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jiv-mC-NRV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="recieved_bubble_color"/>
+                        <constraints>
+                            <constraint firstItem="Qwr-dS-fBv" firstAttribute="leading" secondItem="keG-8v-P7n" secondAttribute="leading" constant="8" id="3wJ-Uw-PoP"/>
+                            <constraint firstItem="93X-xN-8CR" firstAttribute="top" secondItem="pv3-og-DGn" secondAttribute="top" id="LdB-pv-FPm"/>
+                            <constraint firstItem="pv3-og-DGn" firstAttribute="top" secondItem="keG-8v-P7n" secondAttribute="top" constant="12" id="LeN-UX-48p"/>
+                            <constraint firstItem="Qwr-dS-fBv" firstAttribute="top" secondItem="pv3-og-DGn" secondAttribute="bottom" constant="4" id="Tmr-CA-j7Z"/>
+                            <constraint firstAttribute="bottom" secondItem="Qwr-dS-fBv" secondAttribute="bottom" constant="5" id="Tvm-QO-U7t"/>
+                            <constraint firstItem="93X-xN-8CR" firstAttribute="leading" secondItem="pv3-og-DGn" secondAttribute="leading" id="dRD-7w-DS5"/>
+                            <constraint firstItem="93X-xN-8CR" firstAttribute="trailing" secondItem="pv3-og-DGn" secondAttribute="trailing" id="gyH-z0-Kz6"/>
+                            <constraint firstAttribute="trailing" secondItem="pv3-og-DGn" secondAttribute="trailing" constant="12" id="hF4-F8-Pgt"/>
+                            <constraint firstItem="93X-xN-8CR" firstAttribute="height" secondItem="pv3-og-DGn" secondAttribute="height" id="iPV-4o-TV6"/>
+                            <constraint firstAttribute="trailing" secondItem="Qwr-dS-fBv" secondAttribute="trailing" constant="8" id="qlM-s5-5Mv"/>
+                            <constraint firstItem="pv3-og-DGn" firstAttribute="leading" secondItem="keG-8v-P7n" secondAttribute="leading" constant="12" id="teB-uW-fYP"/>
+                            <constraint firstAttribute="width" constant="244" id="vud-6N-fgC"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.00 pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob9-su-Spm">
+                        <rect key="frame" x="4" y="285" width="244" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="gt3-jv-KWa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                        <color key="textColor" name="grey_90"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-6T-ap2">
+                        <rect key="frame" x="4" y="285" width="0.0" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1tm-DZ-fKG"/>
+                            <constraint firstAttribute="width" id="xLn-SV-E3O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal">
+                            <color key="titleColor" name="colorNoti"/>
+                        </state>
+                        <connections>
+                            <action selector="onClickReadMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J7g-xB-h90"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="keG-8v-P7n" secondAttribute="bottom" constant="16" id="5r3-he-B9c"/>
+                    <constraint firstItem="keG-8v-P7n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="75I-l7-OZZ"/>
+                    <constraint firstItem="ob9-su-Spm" firstAttribute="trailing" secondItem="keG-8v-P7n" secondAttribute="trailing" id="ACs-db-LXb"/>
+                    <constraint firstItem="ob9-su-Spm" firstAttribute="top" secondItem="keG-8v-P7n" secondAttribute="bottom" id="DCS-TX-jsY"/>
+                    <constraint firstItem="YMb-6T-ap2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Mhz-KV-5ID"/>
+                    <constraint firstAttribute="bottom" secondItem="ob9-su-Spm" secondAttribute="bottom" id="O8j-8x-VHu"/>
+                    <constraint firstItem="ob9-su-Spm" firstAttribute="leading" secondItem="YMb-6T-ap2" secondAttribute="trailing" id="eDU-Ok-gJo"/>
+                    <constraint firstItem="keG-8v-P7n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="lTw-i5-uYE"/>
+                    <constraint firstItem="YMb-6T-ap2" firstAttribute="top" secondItem="keG-8v-P7n" secondAttribute="bottom" id="ulF-kb-psn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bReadMore" destination="YMb-6T-ap2" id="5hq-O2-HrK"/>
+                <outlet property="conWidthReadMore" destination="xLn-SV-E3O" id="pAK-BM-okQ"/>
+                <outlet property="ivImage" destination="pv3-og-DGn" id="SX1-Uz-MiY"/>
+                <outlet property="lbMessage" destination="Qwr-dS-fBv" id="u5n-vO-vF7"/>
+                <outlet property="lbTime" destination="ob9-su-Spm" id="rKW-u9-lYO"/>
+                <outlet property="viewMain" destination="keG-8v-P7n" id="jCW-rc-KyQ"/>
+            </connections>
+            <point key="canvasLocation" x="213.04347826086959" y="226.00446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="colorNoti">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey_90">
+            <color red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="recieved_bubble_color">
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
