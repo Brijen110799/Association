@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FinBookImageCell" customModule="Finca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="296" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-5d-yKz">
+                        <rect key="frame" x="1" y="1" width="294" height="248"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pIl-AB-gma">
+                                <rect key="frame" x="2" y="2" width="290" height="244"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulG-0j-An4">
+                                <rect key="frame" x="259" y="0.0" width="35" height="35"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete_button" translatesAutoresizingMaskIntoConstraints="NO" id="kzp-4S-1o7">
+                                        <rect key="frame" x="11.5" y="5.5" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="ZmI-O3-Lpy"/>
+                                            <constraint firstAttribute="width" constant="18" id="yep-Yh-Azw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="imageTintColor">
+                                                <color key="value" name="red_500"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uik-Ld-ugm">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <connections>
+                                            <action selector="btnDelete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ywc-wW-5sG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kzp-4S-1o7" firstAttribute="centerX" secondItem="ulG-0j-An4" secondAttribute="centerX" constant="3" id="202-1J-wcd"/>
+                                    <constraint firstAttribute="width" constant="35" id="58E-42-kDi"/>
+                                    <constraint firstItem="Uik-Ld-ugm" firstAttribute="top" secondItem="ulG-0j-An4" secondAttribute="top" id="5BS-EW-lux"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uik-Ld-ugm" secondAttribute="bottom" id="AfW-jc-NQZ"/>
+                                    <constraint firstItem="kzp-4S-1o7" firstAttribute="centerY" secondItem="ulG-0j-An4" secondAttribute="centerY" constant="-3" id="Px0-hS-XzD"/>
+                                    <constraint firstAttribute="height" constant="35" id="WGv-bo-0Tz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uik-Ld-ugm" secondAttribute="trailing" id="gkW-h1-0v0"/>
+                                    <constraint firstItem="Uik-Ld-ugm" firstAttribute="leading" secondItem="ulG-0j-An4" secondAttribute="leading" id="u9L-Dm-ltV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pIl-AB-gma" firstAttribute="top" secondItem="PbZ-5d-yKz" secondAttribute="top" constant="2" id="5O2-rj-0LI"/>
+                            <constraint firstItem="ulG-0j-An4" firstAttribute="top" secondItem="PbZ-5d-yKz" secondAttribute="top" id="Rqm-ot-li5"/>
+                            <constraint firstAttribute="trailing" secondItem="ulG-0j-An4" secondAttribute="trailing" id="USJ-X8-aU3"/>
+                            <constraint firstItem="pIl-AB-gma" firstAttribute="leading" secondItem="PbZ-5d-yKz" secondAttribute="leading" constant="2" id="XVj-ci-RSf"/>
+                            <constraint firstAttribute="trailing" secondItem="pIl-AB-gma" secondAttribute="trailing" constant="2" id="jHK-4q-mc9"/>
+                            <constraint firstAttribute="bottom" secondItem="pIl-AB-gma" secondAttribute="bottom" constant="2" id="qla-qK-YpK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="ColorPrimary"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PbZ-5d-yKz" secondAttribute="bottom" constant="1" id="6vv-Sd-bP6"/>
+                <constraint firstAttribute="trailing" secondItem="PbZ-5d-yKz" secondAttribute="trailing" constant="1" id="aj1-Hn-FWF"/>
+                <constraint firstItem="PbZ-5d-yKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="cgf-m9-VaE"/>
+                <constraint firstItem="PbZ-5d-yKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="ltd-XK-wg7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="296" height="250"/>
+            <connections>
+                <outlet property="selectedImage" destination="pIl-AB-gma" id="Au1-e4-XdX"/>
+            </connections>
+            <point key="canvasLocation" x="315.94202898550725" y="208.92857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete_button" width="32" height="32"/>
+        <namedColor name="ColorPrimary">
+            <color red="0.40784313725490196" green="0.17647058823529413" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red_500">
+            <color red="0.95686274509803926" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

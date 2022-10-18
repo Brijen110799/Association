@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins_regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogCheckUpdateVC" customModule="Finca" customModuleProvider="target">
+            <connections>
+                <outlet property="bCancel" destination="gye-8G-6MA" id="B6j-2B-lCa"/>
+                <outlet property="bOK" destination="b4w-oq-f3q" id="lr8-id-xYs"/>
+                <outlet property="lbldesc" destination="zab-uE-FOt" id="qYh-ls-K04"/>
+                <outlet property="view" destination="dGg-oT-Lx6" id="pQK-bx-GNU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dGg-oT-Lx6">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNB-jK-Par">
+                    <rect key="frame" x="10" y="335.5" width="394" height="225"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="UT5-MK-Hfh">
+                            <rect key="frame" x="137" y="10" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="7Je-lk-TO7"/>
+                                <constraint firstAttribute="height" constant="120" id="PVR-gz-DWZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fincasys is up to date." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zab-uE-FOt">
+                            <rect key="frame" x="16" y="146" width="362" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="gZe-LV-b5C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                            <color key="textColor" name="textPrimaryColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGf-kB-HYw">
+                            <rect key="frame" x="0.0" y="185" width="394" height="40"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hCx-3R-Txb">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gye-8G-6MA">
+                                            <rect key="frame" x="0.0" y="0.0" width="197" height="40"/>
+                                            <color key="backgroundColor" name="gray10"/>
+                                            <state key="normal" title="CANCEL">
+                                                <color key="titleColor" name="textPrimaryColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="CancelClick:" destination="-1" eventType="touchUpInside" id="beq-Wn-wiP"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4w-oq-f3q">
+                                            <rect key="frame" x="197" y="0.0" width="197" height="40"/>
+                                            <color key="backgroundColor" name="ColorPrimary"/>
+                                            <state key="normal" title="GO TO APPSTORE">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="GotoAppstoreClick:" destination="-1" eventType="touchUpInside" id="qEa-Nk-MtY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="hCx-3R-Txb" firstAttribute="leading" secondItem="TGf-kB-HYw" secondAttribute="leading" id="0Ge-0O-QdH"/>
+                                <constraint firstAttribute="trailing" secondItem="hCx-3R-Txb" secondAttribute="trailing" id="EXn-Oe-N18"/>
+                                <constraint firstAttribute="height" constant="40" id="Rt3-WO-fC1"/>
+                                <constraint firstAttribute="bottom" secondItem="hCx-3R-Txb" secondAttribute="bottom" id="gAe-Fw-WzG"/>
+                                <constraint firstItem="hCx-3R-Txb" firstAttribute="top" secondItem="TGf-kB-HYw" secondAttribute="top" id="t5Z-tT-fsz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TGf-kB-HYw" secondAttribute="trailing" id="2Au-Wq-dEH"/>
+                        <constraint firstItem="UT5-MK-Hfh" firstAttribute="centerX" secondItem="jNB-jK-Par" secondAttribute="centerX" id="2dh-gZ-D6A"/>
+                        <constraint firstItem="TGf-kB-HYw" firstAttribute="top" secondItem="zab-uE-FOt" secondAttribute="bottom" constant="16" id="HPB-FB-EhU"/>
+                        <constraint firstItem="zab-uE-FOt" firstAttribute="top" secondItem="UT5-MK-Hfh" secondAttribute="bottom" constant="16" id="JAu-S3-InI"/>
+                        <constraint firstItem="zab-uE-FOt" firstAttribute="leading" secondItem="jNB-jK-Par" secondAttribute="leading" constant="16" id="Tdi-dE-Jbl"/>
+                        <constraint firstAttribute="trailing" secondItem="zab-uE-FOt" secondAttribute="trailing" constant="16" id="WlI-Y5-EYh"/>
+                        <constraint firstItem="TGf-kB-HYw" firstAttribute="leading" secondItem="jNB-jK-Par" secondAttribute="leading" id="e3X-jB-QCf"/>
+                        <constraint firstAttribute="bottom" secondItem="TGf-kB-HYw" secondAttribute="bottom" id="hjQ-mj-F0Y"/>
+                        <constraint firstItem="UT5-MK-Hfh" firstAttribute="top" secondItem="jNB-jK-Par" secondAttribute="top" constant="10" id="ix8-Bv-H2N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fIC-gH-UzQ"/>
+            <constraints>
+                <constraint firstItem="fIC-gH-UzQ" firstAttribute="trailing" secondItem="jNB-jK-Par" secondAttribute="trailing" constant="10" id="4s4-kI-KdJ"/>
+                <constraint firstItem="jNB-jK-Par" firstAttribute="leading" secondItem="fIC-gH-UzQ" secondAttribute="leading" constant="10" id="AwP-GN-Xxa"/>
+                <constraint firstItem="jNB-jK-Par" firstAttribute="centerY" secondItem="dGg-oT-Lx6" secondAttribute="centerY" id="LQC-Fp-4Jx"/>
+            </constraints>
+            <point key="canvasLocation" x="61" y="175"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rocket" width="128" height="128"/>
+        <namedColor name="ColorPrimary">
+            <color red="0.58823529411764708" green="0.7686274509803922" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray10">
+            <color red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textPrimaryColor">
+            <color red="0.21600000560283661" green="0.27799999713897705" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

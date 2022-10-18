@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EntertainmentGameCell" customModule="Finca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="206"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIs-4u-CiL">
+                        <rect key="frame" x="0.0" y="8" width="439" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="entertainment_button_background" translatesAutoresizingMaskIntoConstraints="NO" id="QX5-Vs-Tbc">
+                                <rect key="frame" x="0.0" y="0.0" width="439" height="190"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-BO-lEv">
+                                <rect key="frame" x="20" y="36.5" width="399" height="117.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zmm-rT-iNg">
+                                        <rect key="frame" x="159.5" y="8" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="eUA-q4-j1u"/>
+                                            <constraint firstAttribute="width" constant="80" id="nc4-of-diq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78p-JL-06Y">
+                                        <rect key="frame" x="2" y="95" width="395" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="78p-JL-06Y" firstAttribute="top" secondItem="zmm-rT-iNg" secondAttribute="bottom" constant="7" id="D79-Jb-SKR"/>
+                                    <constraint firstAttribute="bottom" secondItem="78p-JL-06Y" secondAttribute="bottom" constant="2" id="Qcr-R5-Jjg"/>
+                                    <constraint firstItem="78p-JL-06Y" firstAttribute="leading" secondItem="UVX-BO-lEv" secondAttribute="leading" constant="2" id="X5c-2Q-9AD"/>
+                                    <constraint firstItem="zmm-rT-iNg" firstAttribute="centerX" secondItem="UVX-BO-lEv" secondAttribute="centerX" id="YC6-mc-taI"/>
+                                    <constraint firstAttribute="trailing" secondItem="78p-JL-06Y" secondAttribute="trailing" constant="2" id="cEf-jy-omx"/>
+                                    <constraint firstItem="zmm-rT-iNg" firstAttribute="top" secondItem="UVX-BO-lEv" secondAttribute="top" constant="8" id="dBo-VD-lZM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UVX-BO-lEv" firstAttribute="centerY" secondItem="UIs-4u-CiL" secondAttribute="centerY" id="1dS-LA-z1Q"/>
+                            <constraint firstItem="QX5-Vs-Tbc" firstAttribute="leading" secondItem="UIs-4u-CiL" secondAttribute="leading" id="58Z-OS-Ic9"/>
+                            <constraint firstItem="QX5-Vs-Tbc" firstAttribute="top" secondItem="UIs-4u-CiL" secondAttribute="top" id="Ivu-ed-loX"/>
+                            <constraint firstItem="UVX-BO-lEv" firstAttribute="leading" secondItem="UIs-4u-CiL" secondAttribute="leading" constant="20" id="cnt-eW-kUq"/>
+                            <constraint firstAttribute="trailing" secondItem="UVX-BO-lEv" secondAttribute="trailing" constant="20" id="fNj-FS-3be"/>
+                            <constraint firstAttribute="bottom" secondItem="QX5-Vs-Tbc" secondAttribute="bottom" id="ura-XK-5Gy"/>
+                            <constraint firstAttribute="trailing" secondItem="QX5-Vs-Tbc" secondAttribute="trailing" id="xNe-Te-fR6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UIs-4u-CiL" secondAttribute="trailing" id="Q8l-r4-yBU"/>
+                <constraint firstAttribute="bottom" secondItem="UIs-4u-CiL" secondAttribute="bottom" constant="8" id="XEu-xs-HXO"/>
+                <constraint firstItem="UIs-4u-CiL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="eGs-fq-e6W"/>
+                <constraint firstItem="UIs-4u-CiL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hrr-Bv-hMq"/>
+            </constraints>
+            <size key="customSize" width="439" height="206"/>
+            <connections>
+                <outlet property="imgHeight" destination="eUA-q4-j1u" id="Q0s-IV-Tar"/>
+                <outlet property="imgHomeCell" destination="zmm-rT-iNg" id="Lh0-8z-EtH"/>
+                <outlet property="imgwidth" destination="nc4-of-diq" id="m6b-3L-GiN"/>
+                <outlet property="lblHomeCell" destination="78p-JL-06Y" id="1ab-td-baU"/>
+                <outlet property="viewMain" destination="UVX-BO-lEv" id="FEa-NJ-Gyn"/>
+            </connections>
+            <point key="canvasLocation" x="-19.565217391304348" y="147.32142857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="entertainment_button_background" width="513" height="250"/>
+    </resources>
+</document>
